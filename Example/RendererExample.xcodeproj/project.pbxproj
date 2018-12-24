@@ -34,7 +34,11 @@
 		5DD410F52191BE83003FC01E /* RendererExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererExampleTests.swift; sourceTree = "<group>"; };
 		5DD410F72191BE83003FC01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F3998302BAD50D7F8342239 /* Pods-RendererExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendererExampleTests.release.xcconfig"; path = "Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B4E33CCBB20B2C32C2D28B8 /* Pods-RendererExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendererExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RendererExample/Pods-RendererExample.release.xcconfig"; sourceTree = "<group>"; };
+		6E28197F7E5ABC394F4F0FCC /* Pods-RendererExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendererExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		B32A84CF5935E0424815282B /* Pods_RendererExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RendererExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E01BE4FAF2B7981DFBC929 /* Pods-RendererExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendererExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RendererExample/Pods-RendererExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E226FFE47444249FDAB301 /* Pods-RendererExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendererExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5AEBF5D1CCA6676AF42DF7 /* Pods-RendererExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendererExample.debug.xcconfig"; path = "Target Support Files/Pods-RendererExample/Pods-RendererExample.debug.xcconfig"; sourceTree = "<group>"; };
 		ED54BAC61FC5BE2E00AA8199 /* RendererExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RendererExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED54BAC91FC5BE2E00AA8199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,10 @@
 				57EBD18442821431CB1A3710 /* Pods-RendererExample.release.xcconfig */,
 				57341691F8752A40A93F36E9 /* Pods-RendererExampleTests.debug.xcconfig */,
 				5F3998302BAD50D7F8342239 /* Pods-RendererExampleTests.release.xcconfig */,
+				B6E01BE4FAF2B7981DFBC929 /* Pods-RendererExample.debug.xcconfig */,
+				6B4E33CCBB20B2C32C2D28B8 /* Pods-RendererExample.release.xcconfig */,
+				D6E226FFE47444249FDAB301 /* Pods-RendererExampleTests.debug.xcconfig */,
+				6E28197F7E5ABC394F4F0FCC /* Pods-RendererExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -237,7 +245,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RendererExample/Pods-RendererExample-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RendererExample/Pods-RendererExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Contentful/Contentful.framework",
@@ -254,7 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RendererExample/Pods-RendererExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RendererExample/Pods-RendererExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1FB9767DA91AB788B2B7285 /* [CP] Embed Pods Frameworks */ = {
@@ -265,7 +273,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -276,7 +284,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RendererExampleTests/Pods-RendererExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD494B4205FDB2F1643B5406 /* [CP] Check Pods Manifest.lock */ = {
@@ -367,7 +375,7 @@
 /* Begin XCBuildConfiguration section */
 		5DD410FB2191BE83003FC01E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57341691F8752A40A93F36E9 /* Pods-RendererExampleTests.debug.xcconfig */;
+			baseConfigurationReference = D6E226FFE47444249FDAB301 /* Pods-RendererExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -390,7 +398,7 @@
 		};
 		5DD410FC2191BE83003FC01E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F3998302BAD50D7F8342239 /* Pods-RendererExampleTests.release.xcconfig */;
+			baseConfigurationReference = 6E28197F7E5ABC394F4F0FCC /* Pods-RendererExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -523,7 +531,7 @@
 		};
 		ED54BAD91FC5BE2E00AA8199 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC5AEBF5D1CCA6676AF42DF7 /* Pods-RendererExample.debug.xcconfig */;
+			baseConfigurationReference = B6E01BE4FAF2B7981DFBC929 /* Pods-RendererExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,7 +548,7 @@
 		};
 		ED54BADA1FC5BE2E00AA8199 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57EBD18442821431CB1A3710 /* Pods-RendererExample.release.xcconfig */;
+			baseConfigurationReference = 6B4E33CCBB20B2C32C2D28B8 /* Pods-RendererExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
