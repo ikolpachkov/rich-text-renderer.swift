@@ -26,7 +26,10 @@
 		39C7341221D10480003E08C9 /* ParagraphRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C7340021D10480003E08C9 /* ParagraphRenderer.swift */; };
 		39C7341321D10480003E08C9 /* ResourceLinkBlockRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C7340121D10480003E08C9 /* ResourceLinkBlockRenderer.swift */; };
 		39C7341421D10480003E08C9 /* RenderingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C7340221D10480003E08C9 /* RenderingConfiguration.swift */; };
-		982FED8B9D4D0F2C9573EEAD /* Pods_ContentfulRichTextRenderer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16276E85B6779D6DABA8732 /* Pods_ContentfulRichTextRenderer.framework */; };
+		39C7341621D10805003E08C9 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 39C7341521D10805003E08C9 /* Cartfile */; };
+		39C7341A21D10959003E08C9 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C7341721D10959003E08C9 /* AlamofireImage.framework */; };
+		39C7341B21D10959003E08C9 /* Contentful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C7341821D10959003E08C9 /* Contentful.framework */; };
+		39C7341C21D10959003E08C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C7341921D10959003E08C9 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +54,10 @@
 		39C7340021D10480003E08C9 /* ParagraphRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphRenderer.swift; sourceTree = "<group>"; };
 		39C7340121D10480003E08C9 /* ResourceLinkBlockRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLinkBlockRenderer.swift; sourceTree = "<group>"; };
 		39C7340221D10480003E08C9 /* RenderingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderingConfiguration.swift; sourceTree = "<group>"; };
-		86094E84E8705E0C346A5D78 /* Pods-ContentfulRichTextRenderer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentfulRichTextRenderer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentfulRichTextRenderer/Pods-ContentfulRichTextRenderer.debug.xcconfig"; sourceTree = "<group>"; };
-		B16276E85B6779D6DABA8732 /* Pods_ContentfulRichTextRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentfulRichTextRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3A4F78674F392D477CF978A /* Pods-ContentfulRichTextRenderer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentfulRichTextRenderer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentfulRichTextRenderer/Pods-ContentfulRichTextRenderer.release.xcconfig"; sourceTree = "<group>"; };
+		39C7341521D10805003E08C9 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		39C7341721D10959003E08C9 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		39C7341821D10959003E08C9 /* Contentful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contentful.framework; path = Carthage/Build/iOS/Contentful.framework; sourceTree = "<group>"; };
+		39C7341921D10959003E08C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				982FED8B9D4D0F2C9573EEAD /* Pods_ContentfulRichTextRenderer.framework in Frameworks */,
+				39C7341B21D10959003E08C9 /* Contentful.framework in Frameworks */,
+				39C7341C21D10959003E08C9 /* Alamofire.framework in Frameworks */,
+				39C7341A21D10959003E08C9 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,10 +77,10 @@
 		39C733D921D1042C003E08C9 = {
 			isa = PBXGroup;
 			children = (
+				39C7341521D10805003E08C9 /* Cartfile */,
 				39C733EE21D10480003E08C9 /* Sources */,
 				39C733E521D1042C003E08C9 /* ContentfulRichTextRenderer */,
 				39C733E421D1042C003E08C9 /* Products */,
-				F39C125A8F522DC02BDDFD33 /* Pods */,
 				43A2EF7858C5FFE8BCA80FAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -140,18 +146,11 @@
 		43A2EF7858C5FFE8BCA80FAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B16276E85B6779D6DABA8732 /* Pods_ContentfulRichTextRenderer.framework */,
+				39C7341921D10959003E08C9 /* Alamofire.framework */,
+				39C7341721D10959003E08C9 /* AlamofireImage.framework */,
+				39C7341821D10959003E08C9 /* Contentful.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F39C125A8F522DC02BDDFD33 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				86094E84E8705E0C346A5D78 /* Pods-ContentfulRichTextRenderer.debug.xcconfig */,
-				E3A4F78674F392D477CF978A /* Pods-ContentfulRichTextRenderer.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +171,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39C733EB21D1042C003E08C9 /* Build configuration list for PBXNativeTarget "ContentfulRichTextRenderer" */;
 			buildPhases = (
-				E640997C4452A8ABCEBD035B /* [CP] Check Pods Manifest.lock */,
 				39C733DE21D1042C003E08C9 /* Headers */,
 				39C733DF21D1042C003E08C9 /* Sources */,
 				39C733E021D1042C003E08C9 /* Frameworks */,
@@ -223,35 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C7341621D10805003E08C9 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E640997C4452A8ABCEBD035B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ContentfulRichTextRenderer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39C733DF21D1042C003E08C9 /* Sources */ = {
@@ -406,7 +380,6 @@
 		};
 		39C733EC21D1042C003E08C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86094E84E8705E0C346A5D78 /* Pods-ContentfulRichTextRenderer.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -415,6 +388,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ContentfulRichTextRenderer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,7 +409,6 @@
 		};
 		39C733ED21D1042C003E08C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3A4F78674F392D477CF978A /* Pods-ContentfulRichTextRenderer.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +417,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ContentfulRichTextRenderer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
