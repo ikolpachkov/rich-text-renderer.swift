@@ -17,6 +17,7 @@ public extension UITextView {
     }
 }
 
+
 private extension CGPoint {
 
     func integral(withScaleFactor scaleFactor: CGFloat) -> CGPoint {
